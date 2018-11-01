@@ -62,7 +62,7 @@ body {
 
 section.thumbnail-wrapper {
 	max-width: 100%;
-	display: flex; 
+	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -101,11 +101,15 @@ a.flex-link {
 	transition: background-color 1s;
 }
 
-a.flex-link:nth-child(2n) {
+a.flex-link:nth-child(2n+1) {
+	background-color: #86d7c8;
+}
+
+a.flex-link:nth-child(3n+4) {
 	background-color: #d6d6cd;
 }
 
-a.flex-link:nth-child(3n) {
+a.flex-link:nth-child(4n+3) {
 	background-color: #c9a16e;
 }
 
@@ -114,7 +118,7 @@ a.flex-link:nth-child(3n) {
 
 a.flex-link:hover {
 	transition: background-color 0s;
-	background-color: #0000ff;	
+	background-color: #0000ff;
 }
 /*
 FONTS N SHIT
@@ -125,7 +129,7 @@ h1 {
 	font-size: 1.75em;
 	font-weight: 400;
 	line-height: 1.35;
-	width: 60%;
+	width: 50%;
 	float: left;
 	padding: 16% 0 0 0;
 	position: absolute;
@@ -239,15 +243,10 @@ Clear-fix
 
 .cf:before,
 .cf:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 
 .cf:after {
 	clear: both;
 }
-
-
-
-
-
