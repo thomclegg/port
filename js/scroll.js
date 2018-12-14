@@ -1,8 +1,21 @@
-// scroll to the top of the page using jquery 
+$(document).on("scroll", function () {
+
+  var scrollTop = $(document).scrollTop()
+
+  var scrollBottom = scrollTop + $(window).height()
+
+  var pageBottom = $(document).height()
+
+  var diff = pageBottom - scrollBottom
+
+  var opacity = 1 - diff / 900
+
+  $("div.fade-bg").css("opacity", opacity)
+})
+
+// scroll to the top of the page using jquery
 
 console.log('hello')
-
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("#js-scroll").on('click', function(event) {

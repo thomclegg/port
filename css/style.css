@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Moderat-Regular';
-  src: url('../Moderat-Regular.eot') format('eot'), /* IE9 Compat Modes */
-       url('../Moderat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../Moderat-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('../fonts/Moderat-Regular.eot') format('eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts//Moderat-Regular.woff2') format('woff2');
+  /* Super Modern Browsers */
+  src: url('../fonts/Moderat-Regular.woff') format('woff');
+  /* Pretty Modern Browsers */
 }
 
 * {
@@ -15,6 +18,7 @@ body {
 	padding: 0;
 	font-size: 16px;
 	background-color: #fff;
+  font-family: 'Moderat-Regular';
 	-webkit-font-smoothing: antialiased;
 	font-style: normal;
 	font-weight: normal;
@@ -23,12 +27,43 @@ body {
 	z-index: 0;
 }
 
+.about-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #d9e8ff;
+  color: #000;
+  z-index: 1;
+  padding: 10%;
+}
+
+
+main {
+  position: relative;
+  z-index: 3;
+  transition: transform ease 1s;
+  background-color: #fff;
+}
+
+main.open {
+  transform: translateX(100%);
+}
+
+a.close-button {
+
+}
+
 #wrapper {
+
 	max-width: 1280px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 0 5% 5% 5%;
 }
+
+
 
 #navigation {
 	width: 100%;
@@ -232,7 +267,7 @@ div.fade-bg {
 
 section.thumbnail-wrapper {
 	max-width: 100%;
-	display: flex; 
+	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -259,7 +294,7 @@ div.thumb:hover {
 
 div.sub-wrap {
 	max-width: 100%;
-	height: 300px; 
+	height: 300px;
 }
 
 div.sub-text {
@@ -468,15 +503,10 @@ Clear-fix
 
 .cf:before,
 .cf:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 
 .cf:after {
 	clear: both;
 }
-
-
-
-
-
