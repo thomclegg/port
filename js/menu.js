@@ -1,6 +1,7 @@
 const toggleTag = document.querySelector("li.menu-toggle")
 const mainTag = document.querySelector("main")
-const closeTag = document.querySelector("a.close-button")
+const closeTag = document.querySelector("li.close-button")
+
 
 
 // when I click the toggletag, toggle a class of open on the main mainTag
@@ -8,11 +9,11 @@ const closeTag = document.querySelector("a.close-button")
 toggleTag.addEventListener("click", function () {
   mainTag.classList.add("open")
 
-  // if (mainTag.classList.contains("open")) {
-  //   closeTag.innerHTML = "Close"
-  // } else {
-  //   closeTag.innerHTML = ""
-  // }
+  if (mainTag.classList.contains("open")) {
+    closeTag.innerHTML = "Close"
+  } else {
+    closeTag.innerHTML = ""
+  }
 
   return false
 })
