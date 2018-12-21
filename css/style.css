@@ -51,8 +51,15 @@ main.open {
   transform: translateX(100%);
 }
 
-a.close-button {
+a.h-link {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+}
 
+a.h-link:hover {
+  border-bottom: none;
 }
 
 #wrapper {
