@@ -177,6 +177,11 @@ Tablet-ish
 
 @media (max-width: 425px) {
 
+
+		.intro {
+	    height: 70vh;
+		}
+
 		h1 {
 			width: 100%;
 			font-size: 1.6em;
@@ -188,6 +193,7 @@ Tablet-ish
 
 		h3 {
 			padding-top: 0;
+			width: 80%;
 		}
 
 		h5 {
