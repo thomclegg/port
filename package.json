@@ -1,0 +1,33 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomclegg/port.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "thomas clegg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomclegg/port/issues"
+  },
+  "homepage": "https://github.com/thomclegg/port#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-preset-env": "^6.6.0"
+  }
+}
