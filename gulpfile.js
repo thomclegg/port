@@ -39,7 +39,7 @@ gulp.task("css", function() {
     })
   )
     .pipe(sourceMaps.write())
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream())
 })
 

@@ -8,7 +8,7 @@ $(document).on("scroll", function () {
 
   var diff = pageBottom - scrollBottom
 
-  var opacity = 1 - diff / 900
+  var opacity = 1 - diff / 400
 
   $("div.fade-bg").css("opacity", opacity)
 })
@@ -32,7 +32,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1500, function(){
+      }, 3000, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;

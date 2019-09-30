@@ -5,6 +5,11 @@ MEDIA QUERIES
 Tablet-ish
 */
 @media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 5% 0 5%;
+  }
+
+
   .med-wrapper-2 {
     width: 58.32%;
     margin: 0;
@@ -13,10 +18,12 @@ Tablet-ish
 }
 
 @media (max-width: 768px) {
+
+
+
+
   h1 {
-    clear: left;
-    width: 70%;
-    font-size: 2em;
+    font-size: 2.4em;
   }
 
   h2 {
@@ -99,7 +106,7 @@ Tablet-ish
   }
 
   .about-header {
-    width: 70%;
+    width: 100%;
   }
 
   .sml-img {
@@ -162,13 +169,26 @@ Tablet-ish
   }
 
   @media (max-width: 425px) {
-    .intro {
-      height: 70vh;
+
+    .wrapper {
+      padding: 0 5% 0 5%;
     }
 
-    h1 {
+    .intro {
+      height: 70vh;
       width: 100%;
-      font-size: 1.6em;
+    }
+
+    .category {
+      flex-direction: column;
+    }
+
+    .project {
+      width: 100%;
+    }
+
+    .w-25-xs {
+      width: 25%;
     }
 
     h2 {
@@ -188,42 +208,12 @@ Tablet-ish
       width: 100%;
     }
 
-    .about-header {
-      width: 90%;
-      margin: auto;
-    }
 
-    .square {
-      width: 100%;
-    }
 
     .portfolio {
       margin: 0 0 20px 0;
     }
 
-    .med-wrapper-1,
-    .med-wrapper-2 {
-      width: 100%;
-      margin-bottom: 15%;
-      object-fit: cover;
-      height: 100%;
-    }
-
-    .med-footnote-bottom {
-      margin: 0;
-      padding: 0 0 40px 0;
-    }
-
-    .lrg-med-wrapper {
-      height: 100%;
-      margin-bottom: 15%;
-    }
-
-    .sml-img {
-      width: 100%;
-      clear: both;
-      height: 100%;
-    }
 
     section.thumbnail-wrapper {
       grid-template-columns: 1fr;
@@ -278,6 +268,7 @@ Tablet-ish
 Mobile-ish
 */
   @media (max-width: 320px) {
+
     .portfolio {
       margin: 0 0 20px 0;
     }
@@ -321,5 +312,7 @@ Mobile-ish
 
     #wrapper {
       height: 900px;
+    }
+    
     }
   }
