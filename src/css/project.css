@@ -6,11 +6,28 @@
   }
 
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+         url("/fonts/Inter-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+         url("/fonts/Inter-Medium.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+         url("/fonts/Inter-Bold.woff") format("woff");
+  }
 
 * {
     box-sizing: border-box;

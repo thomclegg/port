@@ -20,23 +20,23 @@ html {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
-  src: url("../dist/fonts/Inter-Regular.woff2") format("woff2"),
-       url("../dist/fonts/Inter-Regular.woff") format("woff");
+  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+       url("/fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 500;
-  src: url("../dist/fonts/Inter-Medium.woff2") format("woff2"),
-       url("../dist/fonts/Inter-Medium.woff") format("woff");
+  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+       url("/fonts/Inter-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
-  font-weight: 600;
-  src: url("../dist/fonts/Inter-SemiBold.woff2") format("woff2"),
-       url("../dist/fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+       url("/fonts/Inter-Bold.woff") format("woff");
 }
 
 * {
@@ -87,7 +87,7 @@ body {
 }
 
 
-a.project-link {
+.project-title p {
   display: flex;
 }
 
@@ -244,23 +244,6 @@ a.h-link:hover {
   to {
     opacity: 1;
   }
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-  animation: fadeIn ease-in 1;
-}
-
-.wow.intro.fadeIn {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-#portfolio.wow.fadeIn {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  animation-delay: 0.1s;
 }
 
 .portfolio {
