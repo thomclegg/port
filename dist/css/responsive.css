@@ -23,7 +23,7 @@ Tablet-ish
 
 
   h1 {
-    font-size: 2.4em;
+    font-size: 3em;
   }
 
   h2 {
@@ -158,20 +158,17 @@ Tablet-ish
 	.sub-text:nth-child(2) {
 	    padding: 0;
 	}*/
-  @media (max-width: 610px) {
-    div.thumb {
-      width: 48%;
-    }
-
-    a.flex-link {
-      width: 48%;
-    }
-  }
+ 
 
   @media (max-width: 425px) {
 
+.header-image {
+  height: 60vh;
+}
+
     .project-title {
       padding-right: 0;
+      width: 100%;
     }
 
     .project-item {
@@ -189,6 +186,7 @@ Tablet-ish
 
     .category {
       flex-direction: column;
+      margin-bottom: 64px;
     }
 
     .project {
