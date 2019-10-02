@@ -19,7 +19,9 @@
                 <img id="logo" src="images/TJC_2017.svg">
             </a>
             <ul>
-                <li><a href="mailto:hello@thmsclegg.com?Subject=Hello!">CONTACT</a></li>
+                <li>
+                    <a href="mailto:hello@thmsclegg.com?Subject=Hello!">CONTACT</a>
+                </li>
             </ul>
         </div>
 
@@ -76,12 +78,18 @@
                     identifying that there are clear gaps, a 'monoculture' of research had begun to emerge.
                 </h2>
                 <div class="docu-wrap">
-                    <div class="docu">
-                        <img src="images/Current.png" alt="current research">
+                    <div class="docu lightbox">
+                        <img src="images/Current.png" alt="current research" class="lightbox-img">
                     </div>
-                    <div class="docu">
-                        <img src="images/Future.png" alt="proposed research">
+                    <div class="docu lightbox">
+                        <img src="images/Future.png" alt="proposed research" class="lightbox-img">
                     </div>
+                </div>
+
+                <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-close">Close</div>
+                    <div class="modal-content"></div>
                 </div>
 
             </div>
@@ -113,7 +121,7 @@
             </div>
         </div>
 
-        <div class="header-wrap">
+        <div class="header-wrap lightbox">
             <img src="images/synthesis.png">
         </div>
 
@@ -160,7 +168,7 @@
                 <h2>A key fixture on the Mojo roadmap for a long time was the ability create an 'application home'. We
                     called it myMojo
                     and it's a crucial part of the product being able to provide more context to a customer.
-            
+
                     In myMojo a customer can;
                     <br><br>
                     1. View their current application details.
@@ -178,13 +186,13 @@
         </div>
 
         <div class="text-block-column">
-                <div class="img-wrapper m-r-5">
-                    <img src="images/mojo_04.png">
-                </div>
-                <div class="img-wrapper">
-                    <img src="images/mojo_02.png">
-                </div>
+            <div class="img-wrapper m-r-5">
+                <img src="images/mojo_04.png">
             </div>
+            <div class="img-wrapper">
+                <img src="images/mojo_02.png">
+            </div>
+        </div>
 
         <a href="#top-of-page" id="js-scroll" class="back-link"><img src="images/pointer-left_black.svg"
                 class="back-arrow">Back to top</a>
@@ -192,6 +200,8 @@
 
     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="js/scroll.js" charset="utf-8"></script>
+    <script src="js/lightbox.js" charset="utf-8"></script>
+
 </body>
 
 </html>

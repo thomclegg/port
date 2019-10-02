@@ -3,31 +3,32 @@
     --green: #00D9BD;
     --light-blue: #93C6FF;
     --off-black: #263237;
-  }
+}
 
 
-  @font-face {
+@font-face {
     font-family: 'Inter';
-    font-style:  normal;
+    font-style: normal;
     font-weight: 400;
     src: url("/fonts/Inter-Regular.woff2") format("woff2"),
-         url("/fonts/Inter-Regular.woff") format("woff");
-  }
-  @font-face {
+        url("/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
     font-family: 'Inter';
-    font-style:  normal;
+    font-style: normal;
     font-weight: 500;
     src: url("/fonts/Inter-Medium.woff2") format("woff2"),
-         url("/fonts/Inter-Medium.woff") format("woff");
-  }
-  
-  @font-face {
+        url("/fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
     font-family: 'Inter';
-    font-style:  normal;
+    font-style: normal;
     font-weight: 700;
     src: url("/fonts/Inter-Bold.woff2") format("woff2"),
-         url("/fonts/Inter-Bold.woff") format("woff");
-  }
+        url("/fonts/Inter-Bold.woff") format("woff");
+}
 
 * {
     box-sizing: border-box;
@@ -150,11 +151,55 @@ li {
 
 .docu {
     width: 45%;
+}
 
+.docu:hover {
+    cursor: pointer;
 }
 
 .no-underline {
     text-decoration: none;
+}
+
+
+.modal {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.show {
+    opacity: 1;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 760px;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
 h1 {
@@ -199,9 +244,14 @@ h2 a {
     font-weight: 700;
 }
 
-a:hover {
+li a {
+    color: var(--off-black);
     text-decoration: none;
-    color: #0000ff;
+}
+
+a:hover {
+    text-decoration: underline;
+ 
 }
 
 /*
@@ -209,7 +259,7 @@ MEDIA QUERIES
 */
 
 @media (max-width: 768px) {
- 
+
 
     .text-block {
         flex-direction: column;
@@ -247,7 +297,8 @@ a.back-link:hover {
 @media (max-width: 320px),
 (max-width: 425px) {
 
-    .research-link, h2 {
+    .research-link,
+    h2 {
         width: 100%;
         line-height: 1.7;
     }

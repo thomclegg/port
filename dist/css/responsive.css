@@ -28,7 +28,7 @@ Tablet-ish
 
   h2 {
     line-height: 1.5;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5;
   }
 
@@ -170,6 +170,14 @@ Tablet-ish
 
   @media (max-width: 425px) {
 
+    .project-title {
+      padding-right: 0;
+    }
+
+    .project-item {
+      flex-direction: column;
+    }
+
     .wrapper {
       padding: 0 5% 0 5%;
     }
@@ -187,8 +195,8 @@ Tablet-ish
       width: 100%;
     }
 
-    .w-25-xs {
-      width: 25%;
+    .w-50-xs {
+      width: 50%;
     }
 
     h2 {
