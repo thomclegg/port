@@ -4,6 +4,7 @@
   --light-blue: #93C6FF;
   --off-black: #263237;
 }
+
 /* 
 @import url('https://rsms.me/inter/inter.css');
 html { 
@@ -18,25 +19,26 @@ html {
 
 @font-face {
   font-family: 'Inter';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 400;
   src: url("/fonts/Inter-Regular.woff2") format("woff2"),
-       url("/fonts/Inter-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 500;
-  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
-       url("/fonts/Inter-Medium.woff") format("woff");
+    url("/fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Inter';
-  font-style:  normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+    url("/fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 700;
   src: url("/fonts/Inter-Bold.woff2") format("woff2"),
-       url("/fonts/Inter-Bold.woff") format("woff");
+    url("/fonts/Inter-Bold.woff") format("woff");
 }
 
 * {
@@ -98,12 +100,12 @@ body {
 }
 
 .tag-list {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tag h3 {
-  color: #00D9BD ;
+  color: #00D9BD;
   font-weight: 500;
 }
 
@@ -130,7 +132,7 @@ body {
 }
 
 .green-circle {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .orange-bg {
@@ -164,7 +166,7 @@ div.main {
   transition: transform ease 1s;
   background-color: #fff;
   height: auto;
-    width: 100%;
+  width: 100%;
 }
 
 .header-image {
@@ -229,21 +231,34 @@ a.h-link:hover {
   justify-content: center;
 }
 
-.intro_about {
-  width: 60%;
-  margin: 10% 0 5% 0;
-  height: 200px;
-  padding: 0;
-  position: relative;
+.intro-about {
+  width: 100%;
+  margin: 0;
+  padding: 5% 0 0 0;
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.about-left {
+  width: 50%;
+  padding-right: 5%;
+}
+
+.about-right {
+  width: 50%;
+  padding-left: 5%;
+}
+
+a.about-link {
+  font-weight: 500;
+}
+
+a.about-link:hover {
+  color: #ea4c6f;
+}
+
+.vh-100 {
+  height: 100vh;
 }
 
 .portfolio {
@@ -343,9 +358,9 @@ h1.currently {
 }
 
 h1.currently a {
-    color: var(--off-black);
-    text-decoration: underline;
-    font-weight: 400;
+  color: var(--off-black);
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 h1.currently a:hover {
@@ -355,7 +370,7 @@ h1.currently a:hover {
 h2 {
   font-size: 2.4em;
   font-weight: 400;
-  line-height: 0.8;
+  line-height: 1.5;
   font-style: normal;
 }
 
@@ -443,7 +458,7 @@ a:link {
 }
 
 .currently a:visited {
-    color: black;
+  color: black;
 }
 
 li a {
@@ -496,7 +511,8 @@ a:visited {
 Clear-fix
 */
 
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
   content: " ";
   display: table;
 }
