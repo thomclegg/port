@@ -5,6 +5,10 @@
   --off-black: #263237;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 
 @import url('https://rsms.me/inter/inter.css');
 html { 
@@ -389,8 +393,13 @@ h3 {
 p {
   font-size: 1.6em;
   color: #000;
-  opacity: 0.6;
+  opacity: 1;
   line-height: 1.5;
+}
+
+a.p-link {
+  color: #006af0;
+  font-weight: 500;
 }
 
 h4 {
